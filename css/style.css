@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+nav {
+    background-color: blueviolet;
+    height: 60px;
+    color: aliceblue;
+    font-size: 24px;
+    align-items: center;
+    display: flex;
+    padding: 0 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+nav li {
+    list-style: none;
+}
+
+.gameContainer {
+    /* background-color: palevioletred; */
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.gameContainer h2{
+    text-shadow: 2px 2px 10px blueviolet;
+}
+.gamebox{
+    color: rebeccapurple;
+    font-size: 80px;
+    text-shadow: 4px 4px 6px #000000;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 7vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 6px #000 inset;
+}
+
+.box:hover {
+    background-color: rgb(216, 191, 240);
+}
+
+.gameInfo {
+    padding: 10px 40px;
+    margin-left: 20px;
+}
+.gameInfo h1{
+    /* text-shadow: 2px 2px 6px #2b2b2b; */
+    text-shadow: 2px 2px 10px blueviolet;
+}
+
+.imgbox img {
+    width: 0;
+    transition: width 1s ease-in-out;
+    margin-top: 20px;
+}
+
+.br {
+    border-right: 0;
+}
+
+.bl {
+    border-left: 0;
+}
+
+.bt {
+    border-top: 0;
+}
+
+.bb {
+    border-bottom: 0;
+}
+
+.reset {
+    background-color: rgb(216, 191, 240);
+    box-shadow: 2px 2px 6px #2b2b2b;
+    padding: 3px 12px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.info {
+    margin-right: 20px;
+    font-weight: 500;
+    text-shadow: 2px 2px 6px blueviolet;
+}
+
+.gameContainer h2 {
+    display: none;
+}
+.line{
+    background-color: black;
+    height: 5px;
+    width: 0;
+    position: absolute;
+    box-shadow: 4px 4px 10px #000;
+    transition: width 1s ease-in-out;
+}
+
+/* Media Query CSS */
+
+@media screen and (max-width: 700px) {
+    .gameContainer {
+        flex-wrap: wrap;
+    }
+
+    .container {
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+
+    .gameInfo h1 {
+        display: none;
+    }
+
+    .gameContainer h2 {
+        display: block;
+        margin: 0 0 40px 30px;
+        font-size: 1.4rem;
+    }
+    
+    .gameInfo {
+        margin-left: 0px;
+    }
+
+}
