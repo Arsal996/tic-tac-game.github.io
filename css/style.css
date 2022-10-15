@@ -129,7 +129,9 @@ nav li {
         grid-template-rows: repeat(3, 20vw);
         grid-template-columns: repeat(3, 20vw);
     }
-
+     .line{
+        display: none;
+     }
     .gameInfo h1 {
         display: none;
     }
@@ -143,5 +145,13 @@ nav li {
     .gameInfo {
         margin-left: 0px;
     }
+    .gamebox{
+         font-size: 60px;
+    }
 
+}
+@media screen and (max-width: 450px){
+    .gamebox{
+        font-size: 45px;
+   }
 }
