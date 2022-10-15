@@ -96,6 +96,9 @@ nav li {
     font-weight: 500;
     border-radius: 5px;
 }
+.reset:hover{
+     background-color: blueviolet;
+}
 
 .info {
     margin-right: 20px;
